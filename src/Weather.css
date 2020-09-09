@@ -3,11 +3,11 @@
   border: 1px solid #dadde1;
   padding: 16px;
   border-radius: 4px;
-  color: rgb(135, 135, 135);
+  color: rgb(33, 33, 33);
 }
 
 .Weather h1 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 100;
   margin: 20px 0 0 0;
   line-height: 29px;
