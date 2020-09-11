@@ -4,12 +4,19 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <div className="container">
         <Weather defaultCity="Brussels" />
 
         <footer>
-          This project was coded by{" "}
+          <a
+            href="https://github.com/CarlaAll/app-carla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open-Sourced on GitHub
+          </a>{" "}
+          {"by "}
           <a
             href="https://www.linkedin.com/in/carla-allenbach-735b6511a"
             target="_blank"
@@ -17,21 +24,13 @@ export default function App() {
           >
             Carla Allenbach
           </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/CarlaAll/app-carla"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            open-sourced on GitHub
-          </a>{" "}
-          and{" "}
+          and is hosted on{" "}
           <a
             href="https://friendly-jepsen-2b3b4f.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            hosted on Netlify
+            Netlify
           </a>
         </footer>
       </div>

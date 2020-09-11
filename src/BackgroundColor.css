@@ -1,0 +1,41 @@
+.App .cold-3 {
+  background-color: #9dbcf9;
+}
+.App .cold-2 {
+  background-color: #9adefa;
+}
+
+.App .cold-1 {
+  background-color: #99fbfc;
+}
+
+.App .cold {
+  background-color: #99f9dc;
+}
+
+.App .warm-1 {
+  background-color: #97f8bb;
+}
+.App .warm-2 {
+  background-color: #b9f799;
+}
+
+.App .warm-3 {
+  background-color: #fcfa9a;
+}
+
+.App .warm-4 {
+  background-color: #f29798;
+}
+
+.App .warm-5 {
+  background-color: #fbdc98;
+}
+
+.App .warm-6 {
+  background-color: #f5b999;
+}
+
+.App .warm-default {
+  background-color: #39322c;
+}

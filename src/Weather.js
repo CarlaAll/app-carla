@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import BackgroundColor from "./BackgroundColor";
 import axios from "axios";
 import "./Weather.css";
 
@@ -18,6 +19,7 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
+      country: response.data.sys.country,
     });
   }
 
@@ -38,31 +40,34 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city.."
-                className="form-control"
-                autoFocus="on"
-                onChange={handleCityChange}
-              />
+      <div>
+        <BackgroundColor temp={weatherData.temperature} />
+        <div className="Weather">
+          <form onSubmit={handleSubmit}>
+            <div className="row">
+              <div className="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city.."
+                  className="form-control"
+                  autoFocus="on"
+                  onChange={handleCityChange}
+                />
+              </div>
+              <div className="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  className="btn btn-primary w-100"
+                />
+              </div>
             </div>
-            <div className="col-3">
-              <input
-                type="submit"
-                value="Search"
-                className="btn btn-primary w-100"
-              />
-            </div>
-          </div>
-        </form>
+          </form>
 
-        <WeatherInfo data={weatherData} />
-        <h3>Forecast</h3>
-        <WeatherForecast city={weatherData.city} />
+          <WeatherInfo data={weatherData} />
+          <h3>Forecast:</h3>
+          <WeatherForecast city={weatherData.city} />
+        </div>
       </div>
     );
   } else {
