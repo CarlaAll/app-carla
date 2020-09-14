@@ -1,41 +1,77 @@
-.cold-3 {
-  background-color: #9dbcf9;
+h4 {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  font-style: initial;
+  color: #323337;
+  line-height: 40px;
 }
+
+.cold-3 {
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
 .cold-2 {
-  background-color: #9adefa;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 }
 
 .cold-1 {
-  background-color: #99fbfc;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(
+    -225deg,
+    #5d9fff 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
 }
 
 .cold {
-  background-color: #99f9dc;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .warm-1 {
-  background-color: #97f8bb;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(
+    -225deg,
+    #9efbd3 0%,
+    #57e9f2 48%,
+    #45d4fb 100%
+  );
 }
 .warm-2 {
-  background-color: #b9f799;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
 }
 
 .warm-3 {
-  background-color: #fcfa9a;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
 
 .warm-4 {
-  background-color: #f29798;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 .warm-5 {
-  background-color: #fbdc98;
+  border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
 }
 
 .warm-6 {
-  background-color: #f5b999;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 }
 
 .warm-default {
-  background-color: red;
+  border-radius: 0 25px 25px 0;
+  background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
 }

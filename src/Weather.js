@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
-import BackgroundColor from "./BackgroundColor";
 import axios from "axios";
 import "./Weather.css";
 
@@ -20,6 +19,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       country: response.data.sys.country,
+      feel: response.data.main.feels_like,
     });
   }
 
@@ -41,7 +41,6 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div>
-        <BackgroundColor temp={weatherData.temperature} />
         <div className="Weather">
           <form onSubmit={handleSubmit}>
             <div className="row">
@@ -63,7 +62,6 @@ export default function Weather(props) {
               </div>
             </div>
           </form>
-
           <WeatherInfo data={weatherData} />
           <h3>Forecast:</h3>
           <WeatherForecast city={weatherData.city} />
