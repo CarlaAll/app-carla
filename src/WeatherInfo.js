@@ -2,7 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
-import "./BackgroundColor.css";
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
   const tempMapping = {
@@ -82,14 +82,12 @@ export default function WeatherInfo(props) {
     39: "warm-6",
     40: "warm-6",
   };
-
   return (
     <div>
       <div>
         {" "}
         <h1>
-          {props.data.city}, {""}
-          {props.data.country}
+          {props.data.city} <small>in {props.data.country}</small>
         </h1>
         <ul>
           <li>
@@ -121,10 +119,10 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
-      <div className={tempMapping[Math.round(props.data.temperature)]}>
-        <h4>
+      <div>
+        <h4 className={tempMapping[Math.round(props.data.temperature)]}>
           {" "}
-          the temperature outside feels like {Math.round(props.data.feel)}°C
+          feels like {Math.round(props.data.feel)}°C outside
         </h4>
       </div>
     </div>
